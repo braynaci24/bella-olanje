@@ -38,12 +38,14 @@ header {
 
 .button-style {
     border-radius: 4px;
-    border: 1px solid #FA4A0C;
-    padding: 5px;
+    padding: 9px;
+    border: 1px solid #fff;
     width: 100px;
-    background-color: #FA4A0C;
+    background: linear-gradient(0deg, rgba(37, 43, 66, 0.4), rgba(37, 43, 66, 0.4)), url(.png);
     color: #fff;
     margin-right: 15px;
+    border-radius: 3px;
+
 
 }
 /* MAİN */
@@ -83,12 +85,14 @@ header {
     height: 100%;
 }
 .card {
-    border: 1px solid #FA4A0C!important;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 900px;
     height: 300px;
+    border: 1px solid #FA4A0C!important;
+    border-radius: 20px;
+   
 }
 .bottom {
     background-image: url(../images/bottom-background.png);
@@ -114,9 +118,14 @@ footer {
 .footer-social-icon {
     color: #FA4A0C;
     font-size: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer-social-icon i {
     margin-right: 20px;
+    
 }
 .collapse:not(.show){
 display: none;
@@ -127,7 +136,7 @@ display: none;
     }
     .box-container {
        padding: 0px 0px;
-       margin: 30px 30px;
+       margin: 15px 30px;
     } 
     .telephone-image {
         top: -115px;
@@ -143,5 +152,25 @@ display: none;
     }
     .nav-item {
         padding-left: 20px;
+    }
+    .footer-text {
+        display: none;
+    }
+    .bottom {
+        height: 35vh;
+        padding: 7px;
+    }
+    .bottom-big-title {
+        padding-top: 0px;
+    }
+    .enterence-paragraph {
+        padding: 22px;
+    }
+    .box-align {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-social-icon  {
+        font-size: 25px;
     }
 }
