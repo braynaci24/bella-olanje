@@ -40,13 +40,11 @@ header {
     border-radius: 4px;
     padding: 9px;
     border: 1px solid #fff;
-    width: 100px;
-    background: linear-gradient(0deg, rgba(37, 43, 66, 0.4), rgba(37, 43, 66, 0.4)), url(.png);
+    width: 150px;
+    background: linear-gradient(0deg, rgba(37, 43, 66, 0.4), rgba(37, 43, 66, 0.4));
     color: #fff;
     margin-right: 15px;
-    border-radius: 3px;
-
-
+    border-radius: 10px;
 }
 /* MAİN */
 .image-container {
@@ -161,7 +159,7 @@ display: none;
         padding: 7px;
     }
     .bottom-big-title {
-        padding-top: 0px;
+        padding-top: 25px;
     }
     .enterence-paragraph {
         padding: 22px;
