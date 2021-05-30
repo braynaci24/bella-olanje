@@ -1,0 +1,147 @@
+/* HEADER */
+header {
+    padding: 0px;
+    background-color: white;
+}
+
+.list-container {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    margin-right: 100px;
+    font-size: 21px;
+    color: #111 !important;
+}
+
+.page-logo {
+    width: 200px;
+    height: 100px;
+}
+
+/* ENTERENCE */
+
+.enterence {
+    text-align: center;
+    color: #fff;
+    background-image: url(../images/main-background.png);
+    height: 50vh;
+}
+
+.enterence-big-title {
+    padding: 30px;
+}
+
+.enterence-paragraph {
+    padding: 30px;
+}
+
+.button-style {
+    border-radius: 4px;
+    border: 1px solid #FA4A0C;
+    padding: 5px;
+    width: 100px;
+    background-color: #FA4A0C;
+    color: #fff;
+    margin-right: 15px;
+
+}
+/* MAİN */
+.image-container {
+    height: 35vh;
+}
+.telephone-image {
+    width: 381px;
+    position: relative;
+    top: -197px;
+    left: -33px;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 1px solid grey;
+}
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 200px;
+}
+.card-body h1  {
+    color: #FA4A0C;
+    padding-bottom: 20px;
+}
+.card-body h3 {
+    font-weight: bold;
+    font-size: 19px!important;
+}
+.box-right-block p {
+    font-size: 22px;
+    opacity: 0.8;
+    padding-bottom: 0px;
+}
+.box-image {
+    width: 100%;
+    height: 100%;
+}
+.card {
+    border: 1px solid #FA4A0C!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 300px;
+}
+.bottom {
+    background-image: url(../images/bottom-background.png);
+    background-position: cover;
+    text-align: center;
+    height: 40vh;
+    color: #fff;
+}
+.bottom-big-title {
+    padding-top: 53px;
+}
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+}
+.footer-text {
+    margin: 0px;
+    font-weight: bold;
+}
+.footer-social-icon {
+    color: #FA4A0C;
+    font-size: 35px;
+}
+.footer-social-icon i {
+    margin-right: 20px;
+}
+.collapse:not(.show){
+display: none;
+}
+@media (max-width: 800px) {
+    .enterence-big-title {
+        padding: 25px;
+    }
+    .box-container {
+       padding: 0px 0px;
+       margin: 30px 30px;
+    } 
+    .telephone-image {
+        top: -115px;
+        left: -33px;
+        z-index: 10;
+        border-bottom: none;
+    }
+    .img {
+        display: none;
+    }
+    .card {
+        width: 340px;
+    }
+    .nav-item {
+        padding-left: 20px;
+    }
+}
