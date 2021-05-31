@@ -1,9 +1,17 @@
+
+.container-fluid {
+    padding: 0px;
+}
+.navbar {
+}
 /* HEADER */
 header {
     padding: 0px;
     background-color: white;
 }
-
+.navbar {
+    justify-content: space-around;
+}
 .list-container {
     justify-content: flex-end;
 }
@@ -48,16 +56,17 @@ header {
 }
 /* MAİN */
 .image-container {
+    position: relative;
     height: 35vh;
 }
 .telephone-image {
     width: 381px;
-    position: relative;
-    top: -197px;
-    left: -33px;
+    position: absolute;
+    top: -70px;
+    left: 520px;
     display: flex;
     margin: 0 auto;
-    border-bottom: 1px solid grey;
+    z-index: 10;
 }
 .box-container {
     display: flex;
@@ -82,7 +91,7 @@ header {
     width: 100%;
     height: 100%;
 }
-.card {
+.home-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,11 +131,99 @@ footer {
     align-items: center;
 }
 .footer-social-icon i {
-    margin-right: 20px;
+    margin-left: 15px;
     
 }
 .collapse:not(.show){
 display: none;
+}
+.order-background {
+    color: #fff;
+    background-image: url(../images/main-background.png);
+    height: 33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-order-container {
+    display: flex;
+}
+.slider-image{
+    border-radius: 40px;
+}
+
+.box {
+    width: 173px;
+    padding: 15px;
+    margin-top: 20px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+.none-padding {
+    text-align: center;
+    padding: 20px 0px 0px 0px ;
+}
+.add-food {
+    width: 100px;
+    border: 1px solid #FA4A0C;
+    border-radius: 8px;
+    background-color: #FA4A0C;
+    color: #fff;
+}
+.market-button {
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid #FA4A0C;
+    background-color: #FA4A0C;
+    color: #fff;
+    margin: 10px 10px;
+}
+.position-container {
+    position: relative;
+    display: none;
+}
+.append-div {
+    position: absolute;
+    top: -200px;
+    left: 320px;
+    width: 600px;
+    height: 500px;
+    background-color: #fff;
+    border: 2px solid #FA4A0C;
+    z-index: 10;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.market-box-style {
+    border: 1px solid #FA4A0C;
+    margin: 10px 40px;
+    border-radius: 5px;
+    font-size: 23px;
+    color: #FA4A0C;
+}
+.market-box-style:hover .trash {
+    display: inline-block;
+    color: #FA4A0C;
+}
+.trash {
+    display: none;
+    padding-left: 20px;
+    color: #FA4A0C;
+}
+.cross {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 40px;
+    color: #FA4A0C;
+    cursor: pointer;
 }
 @media (max-width: 800px) {
     .enterence-big-title {
@@ -137,9 +234,10 @@ display: none;
        margin: 15px 30px;
     } 
     .telephone-image {
-        top: -173px;
-        left: -30px;
+        top: -13px;
+        left: 26px;
         z-index: 10;
+        width: 285px;
         border-bottom: none;
     }
     .img {
@@ -171,4 +269,5 @@ display: none;
     .footer-social-icon  {
         font-size: 25px;
     }
+    
 }
