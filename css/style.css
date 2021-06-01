@@ -258,9 +258,7 @@ display: none;
 .menu-button:focus {
     outline: none!important;
 }
-.menu-list{
-    margin-left:0px;
-}
+
 .menu-list li a {
     color: #FA4A0C!important;
 
@@ -309,5 +307,7 @@ display: none;
     .footer-social-icon  {
         font-size: 25px;
     }
-    
+    .menu-list{
+        margin-left:20px;
+    }
 }
