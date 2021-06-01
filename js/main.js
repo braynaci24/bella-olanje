@@ -56,12 +56,10 @@ $(document).ready(function () {
         $('.append-div').append(`<div class="market-box-style"><img src="${foodAllInformation.image}"> <span>${foodAllInformation.name}</span> <a class="trash" href="#"><i class="far fa-trash-alt"></i></a></div>`);
     })
 
-    function test() {
-        if (window.innerWidth < 800) {
-           
-        }
-    }
-
-    addEventListener("resize", test);
-
+    $('body').on('click', '.trash', function(){
+        let text = $(this).prev().text();
+        let index = foodData.indexOf(text);
+        console.log(index)
+     
+    })
 })
