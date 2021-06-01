@@ -251,6 +251,10 @@ display: none;
     display: flex;
     justify-content: center;
 }
+.fa-bars {
+    font-size: 30px;
+    color: #FA4A0C;
+}
 @media (max-width: 800px) {
     .enterence-big-title {
         padding: 25px;
