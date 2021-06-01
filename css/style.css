@@ -255,6 +255,16 @@ display: none;
     font-size: 30px;
     color: #FA4A0C;
 }
+.menu-button:focus {
+    outline: none!important;
+}
+.menu-list{
+    margin-left: 60px;
+}
+.menu-list li a {
+    color: #FA4A0C!important;
+
+}
 @media (max-width: 800px) {
     .enterence-big-title {
         padding: 25px;
