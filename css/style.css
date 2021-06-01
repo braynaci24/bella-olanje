@@ -247,6 +247,10 @@ display: none;
 .text-muted {
     color: #FA4A0C!important;
 }
+.cont {
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 800px) {
     .enterence-big-title {
         padding: 25px;
