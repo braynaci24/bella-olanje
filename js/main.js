@@ -43,6 +43,7 @@ $(document).ready(function () {
             showConfirmButton: false,
             timer: 400,
         })
+
         foodData = JSON.parse(localStorage.getItem('food')) || []
         let foodSrc = $(this).parent().prev().attr('src');
         let foodName = $(this).prev().text();
@@ -58,8 +59,9 @@ $(document).ready(function () {
 
     $('body').on('click', '.trash', function(){
         let text = $(this).prev().text();
-        let index = foodData.indexOf(text);
-        console.log(index)
-     
+        let ind = foodData.indexOf(text)
+        foodData.splice(text, 1)
+        localStorage.setItem('food', JSON.stringify(foodData))
     })
+   
 })
