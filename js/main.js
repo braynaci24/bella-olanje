@@ -2,7 +2,7 @@ $(document).ready(function () {
     let foodData = JSON.parse(localStorage.getItem('food')) || []
 
     for (let i = 0; i < foodData.length; i++) {
-        $('.append-div').append(`<div class="market-box-style"><img src="${foodData[i].image}"> <span>${foodData[i].name}</span> <a class="trash" href="#"><i class="far fa-trash-alt"></i></a></div>`)
+        $('.append-div').append(`<li class="market-box-style"><img src="${foodData[i].image}"> <span>${foodData[i].name}</span> <a class="trash" href="#"><i class="far fa-trash-alt"></i></a></li>`)
     }
 
     $('.navbar-toggler').click(function () {
@@ -18,13 +18,13 @@ $(document).ready(function () {
         let newValueY = height * pageY * -1 - 50;
         $('.enterence, .bottom, .order-background').css("background-position", newValueX + "px     " + newValueY + "px");
     });
-    $('.slider-order-container').slick({
+  /*   $('.slider-order-container').slick({
         dots: true,
         autoplay: true,
         autoplaySpeed: 2000,
-        slidesToShow: 6,
+        slidesToShow: 2,
         slidesToScroll: 7,
-    });
+    }); */
 
     $('.market-button').click(function () {
         $('.position-container').show();
@@ -54,14 +54,14 @@ $(document).ready(function () {
 
         foodData.push(foodAllInformation);
         localStorage.setItem('food', JSON.stringify(foodData));
-        $('.append-div').append(`<div class="market-box-style"><img src="${foodAllInformation.image}"> <span>${foodAllInformation.name}</span> <a class="trash" href="#"><i class="far fa-trash-alt"></i></a></div>`);
+        $('.append-div').append(`<li class="market-box-style"><img src="${foodAllInformation.image}"> <span>${foodAllInformation.name}</span> <a class="trash" href="#"><i class="far fa-trash-alt"></i></a></li>`);
     })
 
     $('body').on('click', '.trash', function(){
-        let text = $(this).prev().text();
-        let ind = foodData.indexOf(text)
-        foodData.splice(text, 1)
-        localStorage.setItem('food', JSON.stringify(foodData))
+        let ind = $(this).parent().index();
+        foodData.splice(ind,1)
+       localStorage.setItem('food', JSON.stringify(foodData))
+       $(this).parent().remove();
     })
    
 })

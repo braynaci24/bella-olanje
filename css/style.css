@@ -111,6 +111,13 @@ header {
 .bottom-big-title {
     padding-top: 53px;
 }
+.list {
+    display: flex;
+    justify-content: space-around;
+}
+.list li {
+    list-style: none;
+}
 /* FOOTER */
 footer {
     display: flex;
@@ -207,6 +214,7 @@ display: none;
     border-radius: 5px;
     font-size: 23px;
     color: #FA4A0C;
+    list-style: none;
 }
 .market-box-style:hover .trash {
     display: inline-block;
